@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Biblioteca del Estado de Oaxaca</title>
+    
+</head>
+<body>
+    <img src="img/logo.jpg" alt="logo" height="28%" width="12%">
+    <br><br><br><br>
+    <h1><b>Biblioteca Virtual del Estado de Oaxaca</b></h1>
+    
+    <div><label for=""><h2 id="boton"> <b>Filtrar Libro</b> </h2></label><input minlength="4" maxlength="8" size="50"  placeholder="Busca Tu Libro Con Numero De ID" type="search" name="" id="myInput" onkeyup="myFunction()"></div>
+    <br><br><br><br>
+    <div class="container mt-4 shadow-lg p-5 mb-5 bg-body rounded">
+    <table id="myTable"class="table table-bordered table-striped">
+      <thead>
+
+        <tr>
+          <th>ID</th>
+          <th>Edición</th>
+          <th>Nombre del Libro</th>
+          <th>Escritor/Editorial</th>
+        </tr>
+
+      </thead>
+      <tbody id="data">
+      </tbody>
+    </table>
+  </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="ajax.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
